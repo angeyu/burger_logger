@@ -14,4 +14,4 @@ users can add in names of burger's they'd like to eat and devour it if they wish
 - sequelize 
 - handlebars
 
-# errors
+# etc
