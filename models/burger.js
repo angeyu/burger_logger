@@ -4,23 +4,23 @@ const exphbs = require("express-handlebars");
 
 var burger = {
   all: function(cb) {
-    orm.all("burger", function(res) {
+    orm.all("burgers", function(res) {
       cb(res);
     });
   },
   // The variables cols and vals are arrays.
   create: function(cols, vals, cb) {
-    orm.create("burger", cols, vals, function(res) {
+    orm.create("burgers", cols, vals, function(res) {
       cb(res);
     });
   },
   update: function(objColVals, condition, cb) {
-    orm.update("burger", objColVals, condition, function(res) {
+    orm.update("burgers", objColVals, condition, function(res) {
       cb(res);
     });
   },
   delete: function(condition, cb) {
-    orm.delete("burger", condition, function(res) {
+    orm.delete("burgers", condition, function(res) {
       cb(res);
     });
   }
