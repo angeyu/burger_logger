@@ -1,8 +1,7 @@
-//import orm.js here
-// Import the ORM to create functions that will interact with the database.
 var orm = require("../config/orm.js");
 const express = require("express");
 const exphbs = require("express-handlebars");
+
 var burger = {
   all: function(cb) {
     orm.all("burger", function(res) {
@@ -27,5 +26,5 @@ var burger = {
   }
 };
 
-// Export the database functions for the controller (burgersController.js).
+// for burgers_controller.js
 module.exports = burger;

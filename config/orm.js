@@ -1,14 +1,12 @@
-//I'm just copying this shit from the cat activity sorry dude
-//import(require) connection.js into orm.js
-//create methods that will execute necessary mySQL commands
-// Import MySQL connection.
+//i copied/pasted most of this from the cat activity :|
+//i am sad
+// In the orm.js file, create the methods that will execute the necessary MySQL commands in the controllers. These are the methods you will need to use in order to retrieve and store data in your database.
+// selectAll()
+// insertOne()
+// updateOne()
+
 var connection = require("../config/connection.js");
 
-// Helper function for SQL syntax.
-// Let's say we want to pass 3 values into the mySQL query.
-// In order to write the query, we need 3 question marks.
-// The above helper function loops through and creates an array of question marks - ["?", "?", "?"] - and turns it into a string.
-// ["?", "?", "?"].toString() => "?,?,?";
 function printQuestionMarks(num) {
   var arr = [];
 
@@ -106,5 +104,4 @@ var orm = {
   }
 };
 
-// Export the orm object for the model (cat.js).
 module.exports = orm;
